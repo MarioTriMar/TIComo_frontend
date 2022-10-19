@@ -1,0 +1,31 @@
+<div class="cuadrado">
+    <button (click)="atras()">Atras</button>
+</div>
+
+
+<div>
+    
+    <table class="table table-striped">
+        <tr>
+            <th>{{restaurante.cif}}</th>
+            <th>{{restaurante.nombre}}</th>
+            <th class="text-center">{{restaurante.emailContacto}}</th>
+            <th class="text-center">{{restaurante.direccion}}</th>
+            <th class="text-center">{{restaurante.categoria}}</th>
+        </tr>
+        
+        
+    </table>
+    
+    
+  </div>
+  <div style="position: relative; top: 25px">
+    <button class="btn btn-danger" (click)="eliminar(restaurante)" style="position: relative; right: 10px; width: 90px;" >Eliminar</button>
+    <button class="btn btn-warning" (click)="editar(restaurante) "style="position: relative; left: 10px; width: 90px;">Editar</button>
+  </div>
+  <div style="position: relative; top: 40px;">
+        <ng-container>
+            <img [src]="restaurante.imagen" position="relative" top="100px" width="200" height="200">
+        </ng-container>
+        
+  </div>

@@ -1,0 +1,62 @@
+<div>
+    <h3 class="text-center">Registro de restaurantes </h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>CIF : </label>
+            <input type="text"
+            class="form-control"
+            id="cif"
+            [(ngModel)]="restaurante.cif"
+            name="cif"
+            >
+        </div>
+        <div class="form-group">
+            <label>NOMBRE : </label>
+            <input type="text"
+            class="form-control"
+            id="nombre"
+            [(ngModel)]="restaurante.nombre"
+            name="nombre"
+            >
+        </div>
+        <div class="form-group">
+            <label>DIRECCION : </label>
+            <input type="text"
+            class="form-control"
+            id="direccion"
+            [(ngModel)]="restaurante.direccion"
+            name="direccion"
+            >
+        </div>
+        <div class="form-group">
+            <label>EMAIL DE CONTACTO : </label>
+            <input type="text"
+            class="form-control"
+            id="emailContacto"
+            [(ngModel)]="restaurante.emailContacto"
+            name="emailContacto"
+            >
+        </div>
+        <div class="form-group">
+            <label>CATEGORIA : </label>
+            <input type="text"
+            class="form-control"
+            id="categoria"
+            [(ngModel)]="restaurante.categoria"
+            name="categoria"
+            >
+        </div>
+        <div class="form-group">
+            <label>URL IMAGEN : </label>
+            <input type="text"
+            class="form-control"
+            id="imagen"
+            [(ngModel)]="restaurante.imagen"
+            name="imagen"
+            >
+        </div>
+        <button class="btn btn-success">Añadir</button>
+    </form>
+   
+</div>
+
